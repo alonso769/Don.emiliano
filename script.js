@@ -1,19 +1,4 @@
-// Cargar más
-let loadMoreBtn = document.querySelector('#load-more');
-let currentItems = 8;
 
-loadMoreBtn.onclick = () => {
-    let boxes = [...document.querySelectorAll('.box')];
-    for (var i = currentItems; i < currentItems + 4; i++) {
-        if (boxes[i]) {
-            boxes[i].style.display = 'inline-block';
-        }
-    }
-    currentItems += 4;
-    if (currentItems >= boxes.length) {
-        loadMoreBtn.style.display = 'none'
-    }
-}
 
 // Carrito
 const carrito = document.getElementById('carrito');
