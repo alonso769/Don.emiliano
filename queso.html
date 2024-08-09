@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_queso.css">
+</head>
+<body>
+    <div class="butons">
+        <a href="index.html" class="btn-1">Regresar</a>
+    </div>
+    <div class="marquee">
+        <p>¡Pedidos al WhatsApp! Precios no incluyen delivery</p>
+      </div>
+
+          <!-- Código del ícono de WhatsApp -->
+          <footer class="footer">
+            <div id="contacto" class="socials">
+                <a href="https://api.whatsapp.com/send?phone=51933270406&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-icon">
+                    <div class="social"> 
+                        <img src="imagenes/wsp1.png" alt="WhatsApp"> 
+                    </div> 
+                </a>                
+            </div>
+        </footer>
+    <div class="filter-buttons">
+        <button class="btn-1" onclick="filterProducts('all')">Todos</button>
+        <div class="dropdown">
+            <button class="btn-1 dropbtn">Filtrar por País</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="filterProducts('all')">Todos</a>
+                <a href="#" onclick="filterProducts('holanda')">Holandes</a>
+                <a href="#" onclick="filterProducts('italia')">Italia</a>
+                <a href="#" onclick="filterProducts('españa')">España</a>
+                <a href="#" onclick="filterProducts('alemania')">Alemania</a>
+                <a href="#" onclick="filterProducts('uruguay')">Uruguay</a>
+                <a href="#" onclick="filterProducts('danes')">Danes</a>
+                <a href="#" onclick="filterProducts('suiza')">Suiza</a>
+                <a href="#" onclick="filterProducts('nacional')">Nacional</a>
+                <a href="#" onclick="filterProducts('charcuteria')">Charcuteria</a>
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        <!-- Producto de ejemplo -->
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.137.00 Klg</span>
+                    <h3>Queso Cabra Rueda Vonk</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/1.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <!-- Copia y pega el bloque de arriba para agregar más productos -->
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/80.00 Klg</span>
+                    <h3>Queso Gouda Vonk</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/2.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <!-- Más productos aquí -->
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/71.00 Klg</span>
+                    <h3>Queso Maasdam Vonk</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/3.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/12.50 UN</span>
+                    <h3>Queso Crema Eru Maasdammer x 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/4.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <!-- Más productos aquí -->
+
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/12.50 UN</span>
+                    <h3>Queso Crema Eru Grueyere x 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/5.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <div class="product-card holanda">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/12.50 UN</span>
+                    <h3>Queso Crema Eru Smoked Cheese x 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/6.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+        </div>
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.270.00 Klg</span>
+                    <h3>Queso Gorgonzola Natural Giovanni Colombo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/7.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+        
+        <!-- Añade más productos según sea necesario -->
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.125.00 Klg</span>
+                    <h3>Queso Grana Padano Rueda Zanetti</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/8.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/183.00 Klg</span>
+                    <h3>Queso Fontal Colombo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/9.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.22.50</span>
+                    <h3>Queso Grana Padano Zanetti 150 gr.</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/10.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.30</span>
+                    <h3>Queso Parmesano Reggiano Zanetti 150 gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/11.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.33.90</span>
+                    <h3>Queso Duro Pecorino Romano Zanetti Cuña 200 gr.</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/12.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.224.00 Klg</span>
+                    <h3>Queso Taleggio Colombo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/13.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Italianos</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.190.00 Klg</span>
+                    <h3>Queso Manchego 3 meses Don Lorenzo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/14.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Españoles</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.207.00 Klg</span>
+                    <h3>Queso Manchego 6 meses Don Lorenzo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/15.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Españoles</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.232.00 klg</span>
+                    <h3>Queso Manchego 12 meses Maese Miguel</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/16.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Españoles</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.209.00 Klg</span>
+                    <h3>Queso Manchego con Trufas La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/17.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Españoles</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.110.00 Klg</span>
+                    <h3>Queso Iberico 3 leches San Antonio</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/18.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Españoles</a>
+        </div>
+
+
+
+
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.225.00 Klg</span>
+                    <h3>Queso Cambozola Classic</h3>
+                    <p> </p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/19.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Alemanes</a>
+        </div>
+
+
+
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.231.00 Klg</span>
+                    <h3>Queso Brie Chambrie</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/20.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Alemanes</a>
+        </div>
+
+
+
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.21.50 UN</span>
+                    <h3>Queso Cambozola lata x 125gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/21.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Alemanes</a>
+        </div>
+
+
+
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.19.90 UN</span>
+                    <h3>Queso Brie Käserei Champignon Lata - 125 g</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/22.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Alemanes</a>
+        </div>
+
+
+
+
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.20.00 UN</span>
+                    <h3>Queso Camembert Käserei Champignon Lata - 125 g</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/23.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Alemanes</a>
+        </div>
+
+
+
+
+
+        <div class="product-card uruguay">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.84.90 Klg</span>
+                    <h3>Queso Parmesano Uruguayo</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/24.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Uruguayos</a>
+        </div>
+
+
+
+
+
+        <div class="product-card danes">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.88.00 Klg</span>
+                    <h3>Queso Danish Blue St. Clemens</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/25.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Daneses</a>
+        </div>
+
+
+
+
+        <div class="product-card danes">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.19.90 UN</span>
+                    <h3>Queso Brie Emborg Lata - 125 g</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/26.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Daneses</a>
+        </div>
+
+
+
+
+        <div class="product-card suiza">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.188.00 Klg</span>
+                    <h3>Queso Emmental Emmi</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/27.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Suizos</a>
+        </div>
+
+
+
+
+        <div class="product-card suiza">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.256.00 Klg</span>
+                    <h3>Queso Gruyere Emmi</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/28.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Suizos</a>
+        </div>
+
+
+
+
+        <div class="product-card suiza">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.257.00 Klg</span>
+                    <h3>Queso Tilsiter Emmi</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/29.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Suizos</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/47.00 Klg</span>
+                    <h3>Queso Paria con Orégano Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/30.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00 Klg</span>
+                    <h3>Queso Paria Puno Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/31.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/43.00 Klg</span>
+                    <h3>Queso Paria Mistiano Arequipeño Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/32.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/43.00 Klg</span>
+                    <h3>Queso Paria Tacneño Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/33.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/31.00 Klg</span>
+                    <h3>Queso Fresco Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/34.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/48.00 Klg</span>
+                    <h3>Queso Edam Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/35.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/51.00 Klg</span>
+                    <h3>Queso Gouda Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/36.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/47.00 Klg</span>
+                    <h3>Queso Andino Laits</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/37.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/55.00 Klg</span>
+                    <h3>Queso Gouda Don Bosco</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/38.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/51.00 Klg</span>
+                    <h3>Queso Andino Don Bosco</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/39.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/51.00 Klg</span>
+                    <h3>Queso Oregano Don Bosco</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/40.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.76.90</span>
+                    <h3>Queso Tilsit Don Bosco</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/41.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+        
+        <div class="product-card nacional">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/51.00 Klg</span>
+                    <h3>Queso Paria Light Don Bosco</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/42.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">QUESOS Nacionales</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/71.00 Klg</span>
+                    <h3>Jamón Inglés Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/43.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/86.00 Klg</span>
+                    <h3>Bondiola Ahumada Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/44.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/69.00 Klg</span>
+                    <h3>Lomo Ahumado Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/45.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/77.00 Klg</span>
+                    <h3>Jamón del País Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/46.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.90 Klg</span>
+                    <h3>Chicharrón de Prensa Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/47.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/110.00 Klg</span>
+                    <h3>Salame Húngaro Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/48.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/84.90 Klg</span>
+                    <h3>Jamon Pechuga de Pavo Casa Europa</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/49.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/14.50 UN</span>
+                    <h3>Frankfurter Casa Europa 240gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/50.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/25.50 UN</span>
+                    <h3>Jamon Curado Deshuesado 100gr - Coren</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/51.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/26.50 UN</span>
+                    <h3>Prosciutto Le Charcutier x 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/52.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/19.00 UN</span>
+                    <h3>Salame Milano Cavour - 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/53.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/19.00 UN</span>
+                    <h3>Salame Napoli Cavour - 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/54.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/19.00 UN</span>
+                    <h3>Salame Ungherese Cavour 100gr</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/55.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/19.90 Klg</span>
+                    <h3>Fuet La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/56.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/26.50 Klg</span>
+                    <h3>Chorizo Curado La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/57.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/26.50 Klg</span>
+                    <h3>Chorizo Picante La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/58.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/96.00 Klg</span>
+                    <h3>Salchichon Vela La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/59.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/93.00 Klg</span>
+                    <h3>Chorizo Vela La Leyenda</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/60.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+    
+
+        <div class="product-card charcuteria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images1/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/28.90 UN</span>
+                    <h3>Tapas de España La Taperia 150g: Jamón Serrano + Chorizo + Salchichón</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images1/61.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Charcuteria</a>
+        </div>
+
+
+
+
+
+        
+
+
+
+
+
+    </div>
+    <script src="queso.js"></script>
+</body>
+</html>

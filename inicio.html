@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="menu container">  
+             
+            <input type="checkbox" id="menu" /> 
+            <label for="menu"> 
+                <img src="imagenes/menu.png" class="menu-icon" alt="menu"/>
+            </label> 
+            <nav class="navbar"> 
+                <ul> 
+                    <li><a href="#oferts">Inicio</a></li> 
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <a href="#"><img src="imagenes/logo-1.png" class="logo-1" alt=""></a> <!-- Aquí está la corrección --> 
+                      
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="proyectos" class="slider-box carousel-2">
+        <ul>
+            <li>
+                <img src="imagenes/oferta1.png">
+                <div class="texto">
+                    <h1></h1>
+                    <p></p>
+                </div>                    
+            </li>
+            <li>
+                <img src="imagenes/image2.png">
+                <div class="texto">
+                    <h1></h1>
+                    <p></p>
+                </div>                    
+            </li>
+            <li>
+                <img src="imagenes/image3.png">
+                <div class="texto">
+                    <h1></h1>
+                    <p></p>
+                </div>                    
+            </li> 
+        </ul>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = document.querySelectorAll('.carousel-2');
+    
+            carousels.forEach((carousel, index) => {
+                let position = 0;
+                const slidesToShow = 1; // Número de imágenes a mostrar a la vez
+                const slidesToScroll = 1; // Número de imágenes a desplazar cada vez
+                const totalSlides = carousel.querySelector('ul').children.length;
+    
+                const moveToNextSlide = () => {
+                    position -= slidesToScroll;
+                    if (position < -totalSlides + slidesToShow) {
+                        position = 0; // Reinicia al principio
+                    }
+    
+                    carousel.querySelector('ul').style.transform = `translateX(${position * 100}%)`;
+                };
+    
+                // Desplazar automáticamente cada 5 segundos
+                setInterval(moveToNextSlide, 5000);
+            });
+        });
+    </script>
+   
+    <div class="buttons">
+        <a href="carnes.html" class="btn-1">
+            <img src="imagenes/Recurso 2.png" alt="Carnes">
+            Carnes
+        </a>
+        <a href="chocolate.html" class="btn-1">
+            <img src="imagenes/Recurso 5.png" alt="Regalos y chocolates">
+            Regalos y chocolates
+        </a>
+        <a href="abarrotes.html" class="btn-1">
+            <img src="imagenes/Recurso 4.png" alt="Abarrotes">
+            Abarrotes
+        </a>
+        <a href="vino.html" class="btn-1">
+            <img src="imagenes/Recurso 3.png" alt="Vinos y demás">
+            Vinos y demás
+        </a>
+        <a href="queso.html" class="btn-1">
+            <img src="imagenes/Recurso 6.png" alt="Quesos,lácteos y charcutería">
+            Lacteos y quesos
+        </a>
+    </div>
+    
+
+    <section id="oferts" class="oferts container">
+        <div class="ofert-1 b1">
+            <div class="ofert-txt">
+                <h3>Productos importados de alta calidad</h3>
+                <a href="#">leer mas</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/queso1.jpeg" alt="Imagen 1">
+                        <img src="imagenes/queso2.jpeg" alt="Imagen 2">
+                        <img src="imagenes/queso3.jpeg" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ofert-1 b2">
+            <div class="ofert-txt">
+                <h3>Los mejores maestros carniceros</h3>
+                <a href="#">Leer más</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/carne1.jpeg" alt="Imagen 1">
+                        <img src="imagenes/carne2.jpeg" alt="Imagen 2">
+                        <img src="imagenes/carne3.jpeg" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ofert-1 b3">
+            <div class="ofert-txt">
+                <h3>Ofrecemos productos de calidad</h3>
+                <a href="#">leer mas</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/vino1.jpeg" alt="Imagen 1">
+                        <img src="imagenes/vino2.jpeg" alt="Imagen 2">
+                        <img src="imagenes/vino3.jpeg" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = document.querySelectorAll('.carousel-2');
+    
+            carousels.forEach((carousel) => {
+                let position = 0;
+                const totalSlides = carousel.children.length;
+    
+                const moveToNextSlide = () => {
+                    position++;
+                    if (position >= totalSlides) {
+                        position = 0;
+                    }
+                    const offset = -position * 100;
+                    carousel.style.transform = `translateX(${offset}%)`;
+                };
+    
+                // Desplazar automáticamente cada 5 segundos
+                setInterval(moveToNextSlide, 5000);
+            });
+        });
+    </script>
+
+    <!--<div class="menu-nav2">
+        <div id="pro1" class="tab active">Hamburguesas</div>
+        <div id="pro2" class="tab">Tacos</div>
+        <div id="pro3" class="tab">Desayunos</div>
+      </div>-->
+      
+      <main id="productos" class="products container">
+        <h2>Productos</h2>
+        <div class="box-container" id="lista-1">
+            <div class="box">
+                <img src="imagenes/pr1.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Crema Eru Maasdammer X100gr</h3>
+                    <p>QUESO HOLANDES</p>
+                    <p class="precio">s/12.50 UN</p>
+                    <a href="queso.html" class="agregar-carrito btn-3" data-id="1">Ver nuestros quesos</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr2.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Manchego 3 meses Don Lorenzo</h3>
+                    <p>QUESO ESPAÑOL</p>
+                    <p class="precio">S/190.00</p>
+                    <a href="queso.html" class="agregar-carrito btn-3" data-id="2">Ver nuestros quesos</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr3.png" alt="">
+                <div class="product-txt">
+                    <h3>Granoro Penne Rigate con farina de Quinoa 400GR</h3>
+                    <p>PASTAS</p>
+                    <p class="precio">S/14.90</p>
+                    <a href="abarrotes.html" class="agregar-carrito btn-3" data-id="3">Ver nuestras pastas</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr4.png" alt="">
+                <div class="product-txt">
+                    <h3>ARBORIO RISO SCOTTI 1kl</h3>
+                    <p>ARROCES</p>
+                    <p class="precio">S/28.90</p>
+                    <a href="abarrotes.html" class="agregar-carrito btn-3" data-id="4">Ver nuestros arroces</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pr5.png" alt="">
+                <div class="product-txt">
+                    <h3>SCHMITT SOHNE RIESLING VINO BLANCO SECO</h3>
+                    <p>VINOS ALEMANES</p>
+                    <p class="precio">S/41.90</p>
+                    <a href="vino.html" class="agregar-carrito btn-3" data-id="5">Ver nuestros vinos</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr6.png" alt="">
+                <div class="product-txt">
+                    <h3>SCHMITT SOHNE RETHINK VINO BLANCO SEMI SECO</h3>
+                    <p>VINOS ALEMANES</p>
+                    <p class="precio">S/52.90</p>
+                    <a href="vino.html" class="agregar-carrito btn-3" data-id="6">Ver nuestros vinos</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="imagenes/pr7.png" alt="">
+                <div class="product-txt">
+                    <h3>Caffarel signature collection hazelnut creations 160gr</h3>
+                    <p>Caffarel</p>
+                    <p class="precio">S/41.00</p>
+                    <a href="chocolate.html" class="agregar-carrito btn-3" data-id="7">Ver nuestros chocolates</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr8.png" alt="">
+                <div class="product-txt">
+                    <h3>Hersheys kisses milk chocolate 74gr</h3>
+                    <p>Hersheys</p>
+                    <p class="precio">S/41.00</p>
+                    <a href="chocolate.html" class="agregar-carrito btn-3" data-id="8">Ver nuestros chocolates</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="imagenes/pr9.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr10.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr11.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr12.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="btn-2" id="load-more">Cargar más</div>
+    </main>
+
+    <section class="testimonial container">
+        <span>Testimoniales</span>
+        <h2>Que opinan nuestros clientes</h2>
+        <div class="testimonial-content">
+            <div class="testimonial-1">
+                <p>¡Los cortes de carne son espectaculares y la charcutería es deliciosa! Un lugar donde la calidad habla por sí misma.</p>
+                <img src="imagenes/starts.png" alt="">
+                <h4>Andy Coyure Mazzei</h4>
+            </div>
+
+            <div class="testimonial-1">
+                <p>Increíble atención y conocimiento sobre cada corte de carne. El equipo de expertos de esta carnicería realmente sabe lo que hace.</p>
+                <img src="imagenes/starts.png" alt="">
+                <h4>Jose Ramos Cordova</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div id="contacto" class="socials">
+            <a href="https://api.whatsapp.com/send?phone=51933270406&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">
+                <div class="social">
+                    <img src="imagenes/wsp.png" alt="WhatsApp">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/donemilianobodegagourmet?igsh=MXR4eGdjbjNpOGw3NQ%3D%3D" target="_blank">
+                <div class="social">
+                    <img src="imagenes/insta.png" alt="Instagram">
+                </div>
+            </a>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="script.js">
+          // Redirigir a la página de carga
+          window.location.href = "index.html";
+    </script>
+</body>
+</html>

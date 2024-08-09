@@ -1,0 +1,351 @@
+/* Ajuste del contenedor principal */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background-color: #fbf6f6;
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.butons {
+    margin: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Contenedor de productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta de producto */
+.product-card {
+    background-color: #f5eeee;
+    box-shadow: 0 20px 40px rgb(8 8 8 / 20%);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px; /* Ajuste del ancho máximo */
+    margin: 20px; /* Espaciado entre tarjetas */
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para hover */
+    overflow: hidden; /* Asegura que el contenido no se salga del recuadro */
+}
+
+/* Efecto hover para las tarjetas */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgb(8 8 8 / 30%);
+}
+
+/* Estilo específico cuando hay solo un producto */
+.product-container.single .product-card {
+    max-width: 500px; /* Ajusta el tamaño máximo para una tarjeta única */
+}
+
+/* Estilo específico cuando hay dos productos */
+.product-container.double .product-card {
+    max-width: 400px; /* Ajusta el tamaño máximo para dos tarjetas */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.product-card img {
+    width: 100%; /* Asegura que la imagen tome todo el ancho de su contenedor */
+    max-width: 150px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    border-radius: 10px; /* Esquinas redondeadas para la imagen */
+    transition: transform 0.3s; /* Transición para hover en la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    animation: float 3s ease-in-out infinite; /* Añade la animación de flotación */
+}
+
+/* Efecto hover para la imagen */
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Ajuste del texto del producto */
+.product-card h2, .product-card p {
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+/* Ajuste del precio del producto */
+.product-card .price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    font-size: 18px;
+    color: #FFB900;
+}
+
+.icons img {
+    width: 100px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-txt {
+    max-height: 150px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto; /* Añade una barra de desplazamiento si el contenido es demasiado largo */
+    margin-bottom: 10px; /* Añade un margen inferior para espaciar el botón */
+    scrollbar-color: #FFB900 #333; 
+    text-align: left;
+}
+
+.product-txt span {
+    font-size: 20px;
+    color: #FFB900;
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 18px;
+    color: #131212;
+    text-transform: uppercase;
+}
+
+.product-txt p {
+    font-size: 12px;
+    color: #0f0f0f;
+}
+
+.product-img {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.product-img img {
+    width: 100px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #FFB900;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #FFB900;
+    color: #0b0b0b;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mostrar dos productos por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mostrar dos productos por fila */
+    }
+    .product-card {
+        padding: 10px;
+        margin: 10px; /* Ajuste del margen para pantallas más pequeñas */
+        max-width: 200px; /* Ajuste del ancho máximo para pantallas más pequeñas */
+    }
+    .product-card img {
+        width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+        max-width: 120px; /* Establece un ancho máximo para las imágenes */
+        height: auto; /* Mantén la proporción de las imágenes */
+    }
+    .product-txt span {
+        font-size: 16px;
+    }
+    .product-txt h3 {
+        font-size: 14px;
+    }
+    .product-txt p {
+        font-size: 10px;
+    }
+    .btn-1 {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mostrar dos productos por fila en pantallas muy pequeñas */
+    }
+    .product-card {
+        padding: 10px;
+        margin: 5px; /* Ajuste del margen para pantallas muy pequeñas */
+        max-width: 100%; /* Ajuste del ancho máximo para pantallas muy pequeñas */
+    }
+    .product-card img {
+        width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+        max-width: 100px; /* Establece un ancho máximo para las imágenes */
+        height: auto; /* Mantén la proporción de las imágenes */
+    }
+    .icons i {
+        font-size: 16px;
+    }
+    .icons img {
+        width: 80px;
+    }
+    .product-txt span {
+        font-size: 14px;
+    }
+    .product-txt h3 {
+        font-size: 12px;
+    }
+    .product-txt p {
+        font-size: 9px;
+    }
+    .btn-1 {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+}
+
+
+/* CSS adicional para botones de filtro */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-buttons .btn-1 {
+    margin: 10px;
+}
+
+.filter-buttons .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-buttons .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.filter-buttons .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.filter-buttons .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.filter-buttons .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.marquee {
+    width: 100%; /* Asegura que el marquee ocupe todo el ancho de la pantalla */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    background: #FFB900; /* Color de fondo opcional */
+    color: #333; /* Color del texto */
+    display: flex; /* Para alinear el texto horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+.marquee p {
+    display: inline-block;
+    white-space: nowrap; /* Evita que el texto se ajuste al ancho */
+    animation: marquee 15s linear infinite; /* Animación del texto */
+    padding: 10px 0; /* Espaciado opcional */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100vw); /* Inicia el texto fuera del borde derecho */
+    }
+    100% {
+        transform: translateX(-100%); /* Mueve el texto completamente fuera del borde izquierdo */
+    }
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+}
+
+.whatsapp-icon .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Color de fondo del ícono */
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    width: 50px; /* Ajusta el tamaño del contenedor del ícono */
+    height: 50px; /* Ajusta el tamaño del contenedor del ícono */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra opcional */
+}
+
+.whatsapp-icon img {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: 30px; /* Ajusta el tamaño de la imagen */
+}

@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_vino.css">
+</head>
+<body>
+    <div class="butons">
+        <a href="index.html" class="btn-1">Regresar</a>
+    </div>
+    <div class="marquee">
+        <p>¡Pedidos al WhatsApp! Precios no incluyen delivery</p>
+      </div>
+
+          <!-- Código del ícono de WhatsApp -->
+          <footer class="footer">
+            <div id="contacto" class="socials">
+                <a href="https://api.whatsapp.com/send?phone=51933270406&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-icon">
+                    <div class="social"> 
+                        <img src="imagenes/wsp1.png" alt="WhatsApp"> 
+                    </div> 
+                </a>                
+            </div>
+        </footer>
+    <div class="filter-buttons">
+        <button class="btn-1" onclick="filterProducts('all')">Todos</button>
+        <div class="dropdown">
+            <button class="btn-1 dropbtn">Filtrar por País</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="filterProducts('all')">Todos</a>
+                <a href="#" onclick="filterProducts('alemania')">Alemania</a>
+                <a href="#" onclick="filterProducts('argentina')">Argentina</a>
+                <a href="#" onclick="filterProducts('austria')">Austria</a>
+                <a href="#" onclick="filterProducts('chile')">Chile</a>
+                <a href="#" onclick="filterProducts('españa')">España</a>
+                <a href="#" onclick="filterProducts('estados_unidos')">Estados Unidos</a>
+                <a href="#" onclick="filterProducts('francia')">Francia</a>
+                <a href="#" onclick="filterProducts('hungría')">Hungría</a>
+                <a href="#" onclick="filterProducts('italia')">Italia</a>
+                <a href="#" onclick="filterProducts('peru')">Perú</a>
+                <a href="#" onclick="filterProducts('portugal')">Portugal</a>
+                <a href="#" onclick="filterProducts('sudafrica')">Sudafrica</a>
+                <a href="#" onclick="filterProducts('uruguay')">Uruguay</a>
+                <a href="#" onclick="filterProducts('gin')">Gin</a>
+                <a href="#" onclick="filterProducts('ron')">Ron</a>
+                <a href="#" onclick="filterProducts('pisco')">Pisco</a>
+                <a href="#" onclick="filterProducts('vodka')">Vodka</a>
+                <a href="#" onclick="filterProducts('whisky')">Whisky</a>
+                <a href="#" onclick="filterProducts('bebidas')">Bebidas saborizadas</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        <!-- Producto de ejemplo -->
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.45.90</span>
+                    <h3>SCHMITT SOHNE RIESLING VINO BLANCO SEMI SECO</h3>
+                    <p>Deliciosos sabores a melocotón y manzana
+                        maduros.
+                        Tiene un paladar afrutado y una mineralidad
+                        fresca que lo hace un vino equilibrado y fácil
+                        de tomar. Pruébalo bien frío como aperitivo o
+                        para acompañar ensaladas, pescado, pollo o
+                        cerdo a la parrilla, o comida picante (thai,
+                        vietnamita, etc.)
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/1.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Alemania</a>
+        </div>
+
+        <!-- Copia y pega el bloque de arriba para agregar más productos -->
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.41.90</span>
+                    <h3>SCHMITT SOHNE RIESLING VINO BLANCO SECO</h3>
+                    <p>Aroma afrutado, sabor intenso de manzana y
+                        durazno con notas de cítricos.
+                        Excelente para acompañar mariscos, comidas
+                        picantes, sushi, cerdo o aves de corral.
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/2.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Alemania</a>
+        </div>
+
+        <!-- Más productos aquí -->
+        <div class="product-card alemania">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.52.90</span>
+                    <h3>SCHMITT SOHNE RETHINK VINO BLANCO SEMI SECO</h3>
+                    <p>Color amarillo sutil a brillante con matices
+                        verdosos.
+                        Aroma fresco y limpio con un bouquet afrutado de
+                        manzanas y cítricos. Rethink muestra toques de
+                        melocotón, manzana verde y limón.
+                        Ideal para acompañar ensaladas ligeras, quesos,
+                        pescado al vapor, comida asiática picante (el
+                        ligero dulzor ayuda a reducir el picante), y platos
+                        con carnes blancas.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/3.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Alemania</a>
+        </div>
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.48</span>
+                    <h3>PORTILLO ROSÉ MALBEC VINO ROSADO</h3>
+                    <p>De atractivo color rojo rubí. Posee aromas florales que recuerdan a rosas y frutas rojas, como la cereza, frutilla y frambuesa. En boca se presenta muy fresco, liviano y equilibrado. Finca "El Oasis", Valle de Uco, Tunuyán.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/4.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+        <!-- Más productos aquí -->
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.48</span>
+                    <h3>PORTILLO SAUVIGNON BLANC VINO BLANCO</h3>
+                    <p>De color amarillo, con tonos verdosos bien marcados. Resaltan aromas durazno blanco y pomelo rosado. Vino suave con acidez bien marcada, que lo hace fresco y de caudalías medias. Ideal para acompañar aperitivos, pizzas, es un delicioso vino de verano.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/5.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.48</span>
+                    <h3>PORTILLO CABERNET SAUVIGNON VINO TINTO</h3>
+                    <p>Los vinos tintos son los vinos obtenidos del mosto de uvas tintas, sometidos a un proceso de elaboración que permite transmitir al mosto la materia colorante contenida en los hollejos de las uvas. Dejate deleitar por el Vino Tinto Portillo Cabernet Sauvignon de 750 ml. Este vino tiene origen en Argentina, en la región de Valle De Uco. La uva con la que ha sido elaborado es Cabernet Sauvignon. Dejate deleitar por su excelente sabor.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/6.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.48</span>
+                    <h3>VILUCO MALBEC VINO TINTO</h3>
+                    <p>Color rojo intenso, ofrece aromas a frutos rojos maduros y vainilla y encontramos taninos delicados, vainilla y especias. Se disfruta con carnes rojas asadas, quesos, carnes de caza</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/7.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+        
+        <!-- Añade más productos según sea necesario -->
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.89.90</span>
+                    <h3>VILUCO MALBEC PARTIDA SELECTA VINO TINTO</h3>
+                    <p>A la vista presenta color rojo violáceo con tintes negros. En la nariz frutos rojos, humo, tostado, intenso y persistente. En la boca hay ciruela, mermelada, es soberbio, tánico, excitante.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/8.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.78</span>
+                    <h3>VILUCO RESERVA MALBEC VINO TINTO</h3>
+                    <p>Color rojo intenso, ofrece aromas a frutos rojos maduros y vainilla y encontramos taninos delicados, vainilla y especias. Se disfruta con carnes rojas asadas, quesos, carnes de caza</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/9.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+
+        <div class="product-card argentina">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.78</span>
+                    <h3>VILUCO RESERVA CABERNET SAUVIGNON VINO TINTO</h3>
+                    <p>A la vista presenta color rojo rubí con matices
+                        violáceos con aroma a pimiento dulce, aceitunas
+                        negras y vainilla. En la boca hay taninos dulces,
+                        vainilla, es especiado, estructurado y armónico.
+                        Se disfruta con carnes rojas asadas, quesos y
+                        carnes aliñadas.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/10.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Argentina</a>
+        </div>
+
+
+        <div class="product-card austria">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.78</span>
+                    <h3>WACHAUER VINO BLANCO</h3>
+                    <p>De color amarillo pálido con reflejos verdes. El
+                        paladar es cremoso pero con una acidez de
+                        equilibrio crujiente y una línea de hierba
+                        herbácea y mineral. Un vino aromático, ligero y sin
+                        complicaciones, muy particular, una clara
+                        expresión de los vinos del Wachau.
+                        De aroma muy firme al principio, pero las notas
+                        de fruta blanca de hueso y azahar se abren con
+                        el tiempo en la copa.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/11.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Austria</a>
+        </div>
+
+
+
+        <div class="product-card chile">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.39</span>
+                    <h3>TERRANOBLE CHARDONNAY VINO BLANCO</h3>
+                    <p>Vino limpio, brillante, nariz frutal con notas cítricas, piña y plátano fresco, buen volumen, sucrosidad, grasitud y refrescante en boca. Pescados, mariscos y también una tabla de quesos (brie, camembert, queso fresco).</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/12.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Chile</a>
+        </div>
+
+
+
+        <div class="product-card chile">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.59</span>
+                    <h3>TERRANOBLE RESERVA CHARDONNAY VINOBLANCO</h3>
+                    <p>Vino limpio, brillante, nariz frutal con notas cítricas, piña y plátano fresco, buen volumen, sucrosidad, grasitud y refrescante en boca. Pescados, mariscos y también una tabla de quesos (brie, camembert, queso fresco).</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/13.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Chile</a>
+        </div>
+
+
+
+        <div class="product-card chile">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.82.90</span>
+                    <h3>TAGUA TAGUA RESERVA CABERNET SAUVIGNON VINO TINTO</h3>
+                    <p>Rojo guinda opaco con ribetes violetas. Aromas frutales y especiados; con mora, arándano, cereza, más notas a chocolate y regaliz. En boca es de acidez media, tanino suave, especiado y final medio.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/14.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Chile</a>
+        </div>
+
+
+
+
+        <div class="product-card chile">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.55.90</span>
+                    <h3>TAGUA TAGUA MERLOT VINOTINTO</h3>
+                    <p>Aportan aromas especiados y de frutas del bosque. La acidez es más alta, los taninos mareantes, presentes y un final con notas dulces. de beber y disfrutar.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/15.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Chile</a>
+        </div>
+
+
+
+        <div class="product-card chile">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.84.90</span>
+                    <h3>TAGUA TAGUA RESERVA CARMÉNÈRE VINO TINTO</h3>
+                    <p>Tagua Tagua Carmenere Gran Reserva 2019 resulta de una maravillosa combinación de viñedos viejos y una cuidada crianza en roble francés. Ofrece complejidad y una estructura firme. Elaborado 100% con uva carmenere. Fermentación alcohólica ente 27 y 29º C para obtener mejor color y estructura.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/16.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Chile</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.69.90</span>
+                    <h3>LÁGRIMAS DE MARÍA ROSADO VINO ROSADO</h3>
+                    <p>Se perciben toques de hierbas aromáticas como el romero. Boca: Muy sabroso en boca y refrescante. Tiene una entrada suave, pero un final muy expresivo.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/17.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.74.90</span>
+                    <h3>SINOLS ROSAT VINO ROSADO</h3>
+                    <p>Rosado pálido y atractivo. Tiene aromas de frutas rojas como la cerezas, la fresas y las frutos del bosque con notas de cítricos. Es a la vez fresco y persistente en boca.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/18.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.69.90</span>
+                    <h3>CANALS & MUNNÉ VINO ESPUMANTE </h3>
+                    <p>Aspecto y Color: amarillo pálido, burbujas de
+                        perla fina que forman múltiples collares y
+                        mantienen la anilla en la copa.
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/19.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.78.90</span>
+                    <h3>TAMBORÁ GODELLO VINO BLANCO</h3>
+                    <p>Nos presenta un color amarillo verdoso, con reflejos dorados, limpio y brillante. De un aroma intenso muy expresivo, con notas de fruta blanca, matices florales y botánicos.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/20.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.58</span>
+                    <h3>LA BOSCANA BLANCO VINO BLANCO</h3>
+                    <p>Este vino blanco catalán es un blend de Chardonnay y Viognier. En nariz presenta alta intensidad aromática y finura de aroma con notas de fruta de hueso como melocotón, albaricoque y frutas tropicales</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/21.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.98</span>
+                    <h3>ABADÍA DE SAN CAMPIO ALBARIÑO VINO BLANCO SECO.</h3>
+                    <p>Este vino blanco catalán es un blend de Chardonnay y Viognier. En nariz presenta alta intensidad aromática y finura de aroma con notas de fruta de hueso como melocotón, albaricoque y frutas tropicales</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/22.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.26.90</span>
+                    <h3>DON LUCIANO VINO BLANCO</h3>
+                    <p>Apariencia: Color amarillo pajizo brillante con tonos verdosos. Gusto: En boca es fresco y afrutado donde se repiten los mismos aromas percibidos en nariz; un vino refrescante, fácil de beber que invita a repetir.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/23.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.68.90</span>
+                    <h3>LÁGRIMAS DE MARÍA VINO BLANCO</h3>
+                    <p>Lágrimas de María Blanco es un vino blanco de La Rioja, elaborado con las variedades: tempranillo blanco (54 %) y viura (46 %), después de una cuidadosa cosecha, las bodegas Zinio recolectan la uva más selecta terminar fermentando en sus propias lías</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/24.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.26.90</span>
+                    <h3>DONLUCIANO VINO TINTO - TEMPRANILLO</h3>
+                    <p>En apariencia muestra un intenso color rojo morado (capa alta) con reflejos azules. En nariz se aprecian aromas típicamente varietales (frutos rojos, bayas maduras y monte mediterráneo). Tánico, equilibrado y sabroso en boca, con un largo final.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/25.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.39.90</span>
+                    <h3>PATA NEGRA VINOTINTO-TEMPRANILLO ROBLE</h3>
+                    <p>El vino tinto Pata Negra Roble es un vino España viene por botella de 750 ml. El tipo de uva es Tempranillo 100%. ¡Celebra con una copa de vino tinto y una buena compañía! Debe consumirse a una temperatura de 14 a 16° C.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/26.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.63</span>
+                    <h3>PATA NEGRA RESERVA VALDEPEÑAS VINO TINTO</h3>
+                    <p>Este vino se obtiene de uvas seleccionadas de la variedad Tempranillo que se fermentan a temperatura controlada en torno a los 25-30ºC, teniendo una maceración con los hollejos en torno a los veinte días, para conseguir la estructura y color propios de un vino cuyo destino es su crianza en barrica.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/27.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.95</span>
+                    <h3>PATA NEGRA GRAN RESERVA VALDEPEÑAS VINO TINTO</h3>
+                    <p>Vino con capa alta, de tonos burdeos con matices tejas. Interesante en nariz, se aprecian notas intensas a madera muy bien conjuntadas dentro de matices especiados. De entrada en boca potente y aterciopelada, deja paso a una grata calidez y acaba en un postgusto largo.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/28.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.89.90</span>
+                    <h3>LÁGRIMAS DE MARÍA VINO TINTO TEMPRANILLO</h3>
+                    <p>Color púrpura, violáceo de capa alta, muy intenso y concentrado. Limpio y brillante. Nariz: Nariz envolvente donde aparecen aromas frutales como moras, grosellas y frutos rojos junto a aromas florales y a regaliz tan característico de la variedad Tempranillo.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/29.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.79.90</span>
+                    <h3>LÁGRIMAS DE MARÍA  VINO TINTO TEMPRANILLO MADURADO 6 MESES</h3>
+                    <p>Se trata de un vino de color rojo rubí, con capa alta, limpio y brillante. En nariz es muy sensitivo, destacando de primeras las frutas del bosque bien maduras, combinando con os tostados de los doce meses de madera y otros matices que recuerdan al coco o la vainilla.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/30.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.89.90</span>
+                    <h3>SANCHO GARCÉS VINO TINTO</h3>
+                    <p>De color granate intenso con capa media-alta limpio y brillante. Nariz: Aroma con notas afrutadas, moras y frutas del bosque y de fondo toques balsámicos. Boca: Buena estructura, equilibrada acidez y taninos elegantes.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/31.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+
+        <div class="product-card españa">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.59.90</span>
+                    <h3>REJA DE REJADORADA VINO TINTO</h3>
+                    <p>Reja de Rejadorada, es un vino fácil de disfrutar, expresa juventud y carácter de toro en cada sorbo. Es un vino con solo 2 meses de crianza en barrica de roble, con muy buena carga frutal, por la Garnacha (15%), y con la potencia que caracteriza la Tinta de Toro (85%). 85% Tinta de Toro, 15% Garnacha.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/32.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - España</a>
+        </div>
+
+
+
+
+
+        <div class="product-card estados_unidos">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.293</span>
+                    <h3>BELLE GLOS VINO TINTO</h3>
+                    <p>Aromas a frambuesa, zarzamora silvestre y ligeramente terrosos de olor y vainilla, también se pueden detectar ligeramente el cuero y tabaco. Boca: Un Pinot Noir espectacular fuera de contexto, frutos rojos intensos, pero muy elegante en boca de larga persistencia.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/33.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Estados Unidos</a>
+        </div>
+
+
+
+        <div class="product-card estados_unidos">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.245</span>
+                    <h3>SALDO ZINFANDEL VINO TINTO</h3>
+                    <p>Color rubí oscuro. Nariz: Con audaces aromas de regaliz negro, pimienta negra, cereza, y especias para hornear. Boca: El paladar es delicioso y suave con un toque de chocolate. El final es voluptuoso con taninos suaves y aterciopelados.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/34.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Estados Unidos</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.65</span>
+                    <h3>ROSIÈRE MEDIUM DRY BLANC VINO ESPUMANTE</h3>
+                    <p>Color rubí oscuro. Nariz: Con audaces aromas de regaliz negro, pimienta negra, cereza, y especias para hornear. Boca: El paladar es delicioso y suave con un toque de chocolate. El final es voluptuoso con taninos suaves y aterciopelados.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/35.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.88.90</span>
+                    <h3>BARTON & GUESTIER CRÉMANT DE BORDEAUX ESPUMANTE</h3>
+                    <p>Amarillo pajizo con reflejos dorados. Burbujas finas y regulares. Se muestra intenso y perfumado, predominando aromas frutales (melocotón, albaricoque).</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/36.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.136</span>
+                    <h3>STUDIO BY MIRAVAL VINO ROSADO</h3>
+                    <p>Un cuerpo pálido, aromas cítricos, notas de flerus blanco y un final yodado, estamos en la Provenza. Procedente de parcelas ubicadas en la Riviera francesa, rodeadas de olivos y pinos piñoneros, Studio by Miraval está fuertemente influenciado por el rocío y la proximidad del mar Mediterráneo.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/37.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.171</span>
+                    <h3>CAVES D'ESCLANS WHISPERING ANGEL VINO ROSADO</h3>
+                    <p>El Whispering Angel es un rosado aireado, lleno de finura, con frescura y fruta. En boca, sutiles y gourmet notas de frutos rojos se entremezclan con flores blancas con un toque especiado apoyado por una hermosa mineralidad.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/38.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.100.90</span>
+                    <h3>BARTON & GUESTIER CÔTES DE PROVENCE VINO ROSADO</h3>
+                    <p>Es un vino rosado de color rosa pálido con reflejos brillantes que deleitará tus sentidos. Desde el primer sorbo, este vino te envolverá con su elegancia y delicadeza en nariz, presentando hermosas notas afrutadas combinadas con sutiles aromas de lila y madreselva.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/39.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.72.90</span>
+                    <h3>BARTON & GUESTIER BORDEAUX BLANC VINO BLANCO MUSCADET</h3>
+                    <p>Amarillo pajizo pálido brillante con reflejos verdes. Delicado en nariz, combina aromas a flores blancas con una pincelada cítrica (limón). En boca es vivo y mineral, con un final muy refrescante.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/40.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.76.90</span>
+                    <h3>BARTON & GUESTIER BORDEAUX BLANC VINO BLANCO BLEND</h3>
+                    <p>Amarillo pálido con reflejos verdes. Intenso y complejo en nariz, combina aromas a frutas tropicales (mango, fruta de la pasión, piña) con notas de vainilla. Ataque vivo y amplio, final con una pincelada cítrica.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/41.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+        
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.165.90</span>
+                    <h3>BARTON & GUESTIER SANCERRE VINO BLANCO</h3>
+                    <p>Color amarillo pálido con reflejos verdes brillantes. Expresivo en nariz, combina intensos aromas a flores (acacia), grosellas blancas y frutas exóticas (piña) con una pincelada cítrica (pomelo). Ataque fresco y dinámico que da paso a un largo final mineral.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/42.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.79.90</span>
+                    <h3>BARTON & GUESTIER CÔTES DU RHÔNE VINO TINTO</h3>
+                    <p>Rojo intenso con reflejos púrpura. De nariz intensa, presenta aromas a flores (violeta) y frutos negros (cereza negra, casis) acompañados de notas ligeramente especiadas. En boca es franco y amplio, dando paso a un final afrutado y especiado.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/43.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.59.90</span>
+                    <h3>BARTON & GUESTIER RÉSERVE PINOT NOIR  VINO TINTO</h3>
+                    <p>Rojo rubí con reflejos violeta. De nariz intensa, combina aromas a cereza roja y agradables notas de moca, vainilla y especias al agitar la copa.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/44.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.104.90</span>
+                    <h3>BARTON & GUESTIER PASSEPORT MÉDOC VINO TINTO</h3>
+                    <p>Rojo profundo con reflejos violeta. De nariz intensa, donde se combinan deliciosas notas afrutadas (casis), avainilladas y especiadas. Buena concentración en boca, con taninos presentes y bien integrados en un final persistente y con un delicado sabor a madera.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/45.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.230.90</span>
+                    <h3>BARTON & GUESTIER CHATEU MAGNOL VINO TINTO</h3>
+                    <p>Color púrpura brillante, en nariz fino y elegante con aromas de regaliz, canela, vainilla y bayas rojas (frambuesa, grosella roja), bien equilibrado con taninos aterciopelados, aromas delicados de frutas y un final especiado.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/46.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+        <div class="product-card francia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.503</span>
+                    <h3>CHAMPAGNE VEUVE CLICQUOT VEUVE CLICQUOT PONSARDIN</h3>
+                    <p>Es un ejemplo perfecto de armonía entre delicadeza y energía. Dominado por Pinot Noir, este vino tiene una estructura firme, redondeada con un toque de Pinot Meunier. Casi un tercio de Chardonnay le da la elegancia y delicadeza necesaria para un equilibrio perfecto. Maridaje recomendado: acompaña bien con ensaladas con queso de cabra, queso azul, carnes rojas o blancas con salsas dulces.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/47.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Francia</a>
+        </div>
+
+
+
+
+        <div class="product-card hungría">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.171</span>
+                    <h3>OREMUS MANDOLÁS FURMINT VINO BLANCO</h3>
+                    <p>Mandolás Furmint es un vino blanco joven y afrutado, con aromas frescos. No obstante, es un vino que tiene cuerpo y una acidez viva. El 70 % del vino hace crianza en barrica de roble durante 6 meses.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/48.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Hungría</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.42.90</span>
+                    <h3>BOTTEGA GOLD PROSECCO VINO ESPUMANTE</h3>
+                    <p>Color amarillo pálido, con un resplandor dorado claro. Delicados aromas afrutados y un toque suave de almendra. Sabor fresco, seco y afrutado, con un pequeño toque de almendras en el final. Ideal para acompañar aperitivos, carne blanca y pescado.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/49.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.26.90</span>
+                    <h3>BOTTEGA PETALO IL VINO DELL AMORE VINO ESPUMANTE</h3>
+                    <p>De color amarillo pajizo con ligeros matices rosas. Un delicado vino, dulce y afrutado, con burbujas muy finas y persistentes y aromas florales. Es especialmente indicado para momentos especiales.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/50.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.65</span>
+                    <h3>RICADONNA MOSCATO ROSE VINO ESPUMANTE</h3>
+                    <p>Un espumante rosado de dulzor medio, fresco, con notas a flores rojas como salvia y rosas rosadas, acompañado de red berries, así como a sandía y cherry en almíbar. Todo bajo un envolvente e intenso aroma. Perfecto para servir con pescados blancos, sushi, BBQ y quesos maduros. Si buscan servirlo con algo dulce, el canapé de frutos rojos es ideal.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/51.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.65 Botella 750 ml
+                         / S/.20.80 Botella 200 ml </span>
+                    <h3>RICADONNA RUBY VINO ESPUMANTE</h3>
+                    <p>Semi dulce, donde predominan las notas frutales, como bayas rojas y negras, con fresas y moras, acompañadas de matices profundos como rosas. Por eso, el color característico de esta variedad. Complemente de manera estupenda a postres como sweet cakes, panna cotta, ensaladas de bayas y dulces con naranja y mandarina. Así como a piqueos salados con salsas agridulces y comida china.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/52.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.74.90</span>
+                    <h3>VALFONDA PROSECCO VINO ESPUMANTE</h3>
+                    <p>De color amarillo paja brillante, con reflejos verdes y una espuma suave y delicada. Perfume de buena intensidad y persistencia, con notas de flores blancas (espino) y fruta fresca (manzana y pera), con un ligero toque de costra de pan. Gusto ligeramente abocado y amable, muy fino y elegante con buen cuerpo. Ideal para acompañar como aperitivo, con platos ligeros y delicados como pasta con verduras, arroz con pescado o mariscos, langosta, camarones y carne blanca.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/53.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.154</span>
+                    <h3>VERMENTINO BOLGHERI VINO BLANCO</h3>
+                    <p>De color amarillo pálido con reflejos de color verde claro. Se seduce con sus notas minerales, cítricas y florales. Tiene un final fresco, equilibrado, persistente y mineral. Ideal con pastas, quesos suaves, mariscos cocidos y pastas con salsas marineras.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/54.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.220</span>
+                    <h3>TESTAROSSA MONTEPULCIANO D'ABRUZZO DOC 2018 PASETTI VINO TINTO</h3>
+                    <p>Profundo color rojo rubí. Toques de fruta roja madura, violetas secas y sotosos que evocan ciruelas, cerezas negras y marcados aromas terciarios de eucalipto, regaliz, chocolate y tabaco. Vino cálido, robusto, con taninos elegantes, buena estructura y larga persistencia.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/55.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.65.90</span>
+                    <h3>#BIO PRIMITIVO SALENTO VINO TINTO</h3>
+                    <p>Color rojo púrpura intenso; amplio bouquet de frutas rojas maduras y mermelada de cereza negra y cereza amarilla; toques de pimienta y vainilla, con notas de matorral mediterráneo. Sabor suave y concentrado, con un final que recuerda a mermelada de bayas y regaliz. Recomendado con platos salados y especiados a base de cerdo, legumbres y verduras.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/56.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+        <div class="product-card italia">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.59.90</span>
+                    <h3>#BIO CHANT VINO TINTO</h3>
+                    <p>Color rubí brillante; bouquet aromático, con toques de frambuesas, fresas silvestres, violetas y uvas maduras. Sabor seco, suave pero vivo, agradablemente afrutado, con un fondo de cereza y almendra, además de ser persistentemente elegante. Recomendado con carnes mixtas a la parrilla, aves nobles, cordero, cabrito y queso pecorino.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/57.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Italia</a>
+        </div>
+
+
+
+
+
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.35</span>
+                    <h3>INTIPALKA ROSE SYRAH VINO ROSADO</h3>
+                    <p>Color rosado pálido, con aromas resaltantes a frutos rojos frescos. En boca se percibe delicado, frutal y con una equilibrada acidez que otorga un largo y placentero final. Ideal para acompañar pollo a la parrilla, ensaladas con pollo y alitas BBQ.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/58.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+
+
+
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.35</span>
+                    <h3>INTIPALKA SAUVIGNON VINO BLANCO</h3>
+                    <p>Color amarillo pálido con ribetes verdes. En nariz posee un expresivo aroma donde destacan notas cítricas, hierbas frescas y maracuyá. En boca se percibe frutal, fresco, con buena acidez y un final largo y delicado. Ideal para acompañar aperitivos, carnes blancas a la parrilla y embutidos.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/59.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+
+
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.33.90</span>
+                    <h3>FINCA ROTONDO SAUVIGNON BLANC VINO BLANCO</h3>
+                    <p>De color amarillo verdoso o pálido. Aromas a fruta madura, herbal, con notas cítricas. Seco, con acidez muy interesante. Cuerpo medio, retrogusto franco donde el final deja una sensación sutil de piel de toronja. Ideal para entradas frías a base de pescado como el tiradito. También acompaña muy bien una causa de pulpa de cangrejo. Su frescura e intensidad aromática permiten acompañar desde sushi hasta algunos platos de comida tailandesa.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/60.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+    
+
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.33.90</span>
+                    <h3>FINCA ROTONDO MALBEC VINO TINTO</h3>
+                    <p>Color rojo violáceo. Limpio, de intensidad media. Recuerdos a fruta roja, ciruela, cereza negra, higo y violetas. Seco, con buen equilibrio. Cuerpo medio de persistencia media. En el retrogusto aparece la nota a fruta y flores. Ideal para acompañarlo con chorizos, morcillas, cortes grasos y pastas.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/61.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+
+
+
+
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.33.90</span>
+                    <h3>FINCA ROTONDO MALBEC VINO TINTO</h3>
+                    <p>Color rojo violáceo. Limpio, de intensidad media. Recuerdos a fruta roja, ciruela, cereza negra, higo y violetas. Seco, con buen equilibrio. Cuerpo medio de persistencia media. En el retrogusto aparece la nota a fruta y flores. Ideal para acompañarlo con chorizos, morcillas, cortes grasos y pastas.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/62.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+
+
+        
+        <div class="product-card peru">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.35</span>
+                    <h3>INTIPALKA MALBEC VINO TINTO</h3>
+                    <p>Color y aroma con las características naturales de una variedad singular de uva que nace en nuestras áridas pero fértiles tierras. De color rojo oscuro, con aromas que recuerdan a frutos negros, chocolate y cerezas maduras. En el paladar se perciben notas a cuero y licorosas, complementadas por taninos redondos, que llevan a un largo y elegante final. Ideal para acompañar hongos, asados y carnes guisadas.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/63.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Perú</a>
+        </div>
+
+
+
+
+        <div class="product-card portugal">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.59</span>
+                    <h3>MATEUS ROSE VINO ROSADO</h3>
+                    <p>Mateus Rosé es un vino rosado de color llamativo y brillante. En la boca, es un vino muy equilibrado y tentador, brillantemente complementado por un final suave y ligeramente "pétillant". Servido fresco, Mateus Rosé es ideal como aperitivo, para acompañar un momento refrescante del día, cuando el atardecer</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/64.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Portugal</a>
+        </div>
+
+
+
+
+        <div class="product-card portugal">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.53</span>
+                    <h3>MATEUS BLANC VINO BLANCO</h3>
+                    <p>Es un vino joven con un matiz cítrico y aroma afrutado, con una acidez fina y bien equilibrada, vivo y joven en boca. Consejos de almacenar y servir: Se puede servir como aperitivo o con pescados y mariscos a la parrilla, ensaladas y comidas más ligeras en general.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/65.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Portugal</a>
+        </div>
+
+
+
+
+
+        <div class="product-card sudafrica">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.65.90</span>
+                    <h3>THE WEDGE SHIRAZ-MOUVEDRE-VIOGNE VINO TINTO</h3>
+                    <p>Un blend sudafricano con notas de moras maduras, cassis (grosella negra), moka y pimienta. Bien equilibrado, elaborado con mínima intervención del enólogo, con taninos suaves y excelente concentración de sabores. Es un vino de acidez media, con taninos marcados, alcohol presente y cuerpo medio. Sabores a frutos negros maduros, hierbas, madera, caramelo y una nota ligeramente amarga que deja una sensación fresca al final. Va bien con carnes a la parrilla o platos a base de cordero, lomo saltado, chorizo, hamburguesa, quesos de pasta dura como gouda o parmesano.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/66.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Sudafrica</a>
+        </div>
+
+
+
+
+
+        <div class="product-card uruguay">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.98.90</span>
+                    <h3>PISANO CISPLATINO VINO TINTO</h3>
+                    <p>Un blend sudafricano con notas de moras maduras, cassis (grosella negra), moka y pimienta. Bien equilibrado, elaborado con mínima intervención del enólogo, con taninos suaves y excelente concentración de sabores. Es un vino de acidez media, con taninos marcados, alcohol presente y cuerpo medio. Sabores a frutos negros maduros, hierbas, madera, caramelo y una nota ligeramente amarga que deja una sensación fresca al final. Va bien con carnes a la parrilla o platos a base de cordero, lomo saltado, chorizo, hamburguesa, quesos de pasta dura como gouda o parmesano.</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/67.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Selección de Vinos - Uruguay</a>
+        </div>
+
+
+
+
+
+        
+        <div class="product-card gin">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.181</span>
+                    <h3>THE LONDON Nº1</h3>
+                    <p>Alcohol: 47%
+                         / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/68.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Gin</a>
+        </div>
+
+
+        <div class="product-card ron">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.43.90</span>
+                    <h3>HAVANA CLUB AÑEJO RESERVA 5 AÑOS</h3>
+                    <p>Alcohol: 40% / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/69.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Ron</a>
+        </div>
+
+
+
+
+        <div class="product-card ron">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.43.90</span>
+                    <h3>HAVANA CLUB AÑEJO ESPECIAL</h3>
+                    <p>Alcohol: 40% / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/70.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Ron</a>
+        </div>
+
+
+
+
+
+        <div class="product-card ron">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.71</span>
+                    <h3>VIEJO DE CALDAS - Juan de la Cruz 8 años</h3>
+                    <p>Alcohol: 40% / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/71.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Ron</a>
+        </div>
+
+
+
+
+
+
+        <div class="product-card ron">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.44.90</span>
+                    <h3>VIEJO DE CALDAS - Carta de Oro 5 años</h3>
+                    <p>Alcohol: 40%  / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/72.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Ron</a>
+        </div>
+
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.80</span>
+                    <h3>PISCO TRES GENERACIONES Mosto Verde Torontel</h3>
+                    <p>Alcohol: 41% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/73.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.80</span>
+                    <h3>PISCO TRES GENERACIONES Mosto Verde Torontel</h3>
+                    <p>Alcohol: 41% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/73.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.75</span>
+                    <h3>PISCO TRES GENERACIONES Mosto Verde Quebranta</h3>
+                    <p>Alcohol: 41% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/73.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+        
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.75</span>
+                    <h3>PISCO TRES GENERACIONES Mosto Verde Acholado</h3>
+                    <p>Alcohol: 41% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/73.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.75</span>
+                    <h3>PISCO TRES GENERACIONES Torontel</h3>
+                    <p>Alcohol: 42% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/74.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.75</span>
+                    <h3>PISCO TRES GENERACIONES Quebranta</h3>
+                    <p>Alcohol: 42% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/75.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.75</span>
+                    <h3>PISCO TRES GENERACIONES Acholado</h3>
+                    <p>Alcohol: 42% / Botella 500 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/76.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.25.90</span>
+                    <h3>PISCO SOUR TABERNERO - Piña colada</h3>
+                    <p>Alcohol: 12% / Botella 700 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/77.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.25.90</span>
+                    <h3>PISCO SOUR TABERNERO - Maracuyá</h3>
+                    <p>Alcohol: 12% / Botella 700 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/78.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+        <div class="product-card pisco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.25.90</span>
+                    <h3>PISCO SOUR TABERNERO - Limón</h3>
+                    <p>Alcohol: 12% / Botella 700 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/79.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Pisco</a>
+        </div>
+
+
+
+
+        <div class="product-card vodka">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.230</span>
+                    <h3>BELVEDERE</h3>
+                    <p>Alcohol: 40% / Botella 700 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/80.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Vodka</a>
+        </div>
+
+
+
+
+        <div class="product-card whisky">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.58.90</span>
+                    <h3>JOHNNIE WALKER - RED LABEL</h3>
+                    <p>Alcohol: 40% / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/81.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Whisky</a>
+        </div>
+
+
+
+        <div class="product-card whisky">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/.124.90</span>
+                    <h3>JOHNNIE WALKER - BLACK LABEL</h3>
+                    <p>Alcohol: 40% / Botella 750 ml</p>
+                </div>
+                <div class="product-img">
+                    <img src="images/82.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Whisky</a>
+        </div>
+
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Aranciata Rossa Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/83.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Melograno y Arancia Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/84.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Limonata Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/85.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Pompelmo Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/86.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Limone & Menta Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/87.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+
+        <div class="product-card bebidas">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/9.50</span>
+                    <h3>Agua SAN PELLEGRINO Clementina Lata 330ml</h3>
+                    <p></p>
+                </div>
+                <div class="product-img">
+                    <img src="images/88.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Bebidas saborizadas</a>
+        </div>
+
+
+
+        
+
+    </div>
+    <script src="vino.js"></script>
+</body>
+</html>

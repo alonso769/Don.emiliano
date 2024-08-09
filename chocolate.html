@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_chocolate.css">
+</head>
+<body>
+    <div class="butons">
+        <a href="index.html" class="btn-1">Regresar</a>
+    </div>
+    <div class="marquee">
+        <p>¡Pedidos al WhatsApp! Precios no incluyen delivery</p>
+      </div>
+
+          <!-- Código del ícono de WhatsApp -->
+          <footer class="footer">
+            <div id="contacto" class="socials">
+                <a href="https://api.whatsapp.com/send?phone=51933270406&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-icon">
+                    <div class="social"> 
+                        <img src="imagenes/wsp1.png" alt="WhatsApp"> 
+                    </div> 
+                </a>                
+            </div>
+        </footer>
+        
+    <div class="filter-buttons">
+        <button class="btn-1" onclick="filterProducts('all')">Todos</button>
+        <div class="dropdown">
+            <button class="btn-1 dropbtn">Filtrar por Marca de chocolate</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="filterProducts('all')">Todos</a>
+                <a href="#" onclick="filterProducts('caffarel')">Caffarel</a>
+                <a href="#" onclick="filterProducts('hersheys')">Hersheys</a>
+                <a href="#" onclick="filterProducts('Choco')">Choco cashew</a>
+                
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        <!-- Producto de ejemplo -->
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/21.90</span>
+                    <h3>Caffarel GIANDUIA 1865: GIANDUIA INTENSO BAR</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/1.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/23.00</span>
+                    <h3>Caffarel Dark 86% cacao 80gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/2.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/24.00</span>
+                    <h3>Caffarel 75% cacaco arancia 80gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/3.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/64.90</span>
+                    <h3>Caffarel piemonte classico 200gr.</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/4.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/22</span>
+                    <h3>Caffarel zero zuccheri aggiunti latte 100gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/5.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/22</span>
+                    <h3>Caffarel zero zuccheri aggiunti fondente 100gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/6.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+       
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/21.90</span>
+                    <h3>Caffarel gianduia 1865 80gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/7.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/21.90</span>
+                    <h3>Caffarel dark 75% cacao extra dark 80gr.</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/8.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/39.00</span>
+                    <h3>Caffarel piemonte assorted 125gr.</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/9.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/39.90</span>
+                    <h3>Caffarel piemonte 125gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/10.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/45.00</span>
+                    <h3>Caffarel gianduia 1865 150gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/11.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/45.90</span>
+                    <h3>Caffarel gianduia 1865 150gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/12.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+       
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Caffarel Bombones de Chocolate Cremino Hazelnut Creations Caja 165 g</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/13.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.50</span>
+                    <h3>Caffarel Bombones de Chocolate Nocciolotta Hazelnut Creations Caja 165 g</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/14.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+    
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/77.50</span>
+                    <h3>Caffarel italian selection hazelnut creations 160gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/15.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Caffarel signature collection hazelnut creations 160gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/16.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Caffarel piemonte hazelnut creations 165gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/17.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/60.00</span>
+                    <h3> Caffarel dark cioccolatini fondenti 200gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/18.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+        
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Caffarel signature collection hazelnut creations 160gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/19.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+        <div class="product-card caffarel">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Caffarel signature collection dark hazelnut creations 165gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/20.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Caffarel</a>
+        </div>
+
+
+
+        <div class="product-card hersheys">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/41.00</span>
+                    <h3>Hersheys kisses milk chocolate 74gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/21.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Hersheys</a>
+        </div>
+
+
+
+        <div class="product-card hersheys">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/10.90</span>
+                    <h3>Hersheys kisses chocolate de leche con almendras 74gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/22.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Hersheys</a>
+        </div>
+
+
+
+
+        <div class="product-card hersheys">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/10.90</span>
+                    <h3>Hersheys kisses cookies n creme 74gr.</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/23.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Hersheys</a>
+        </div>
+
+
+
+        <div class="product-card hersheys">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/18.00</span>
+                    <h3>Hersheys chocolate de leche 102gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/24.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Hersheys</a>
+        </div>
+
+
+        <div class="product-card hersheys">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/18.00</span>
+                    <h3>Hersheys kisses cookies and creme 102gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/25.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Hersheys</a>
+        </div>
+
+
+
+        <div class="product-card Choco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/8.00</span>
+                    <h3>Choco cashew (chocolate orgánico) 100gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/26.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Choco cashew</a>
+        </div>
+
+
+
+
+        <div class="product-card Choco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/8.00</span>
+                    <h3>Choco almendras 100gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/27.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Choco cashew</a>
+        </div>
+
+
+
+        <div class="product-card Choco">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images3/logo.png" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>S/8.00</span>
+                    <h3>Choco arandanos 100gr</h3>
+                    <p>
+                        </p>
+                </div>
+                <div class="product-img">
+                    <img src="images3/28.png" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">Choco cashew</a>
+        </div>
+
+    </div>
+    <script src="chocolate.js"></script>
+</body>
+</html>
