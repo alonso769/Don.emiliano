@@ -532,7 +532,7 @@ th, td {
       top: 100%;
       left: 0;
       right: 0;
-      background-color: #FF9000;
+      background-color: #faf9f8;
       display: none;
       z-index: 10; /* Ensure navbar is above other elements */
   }
@@ -548,7 +548,7 @@ th, td {
   }
   
   .menu .navbar ul li a:hover {
-      color: #FFFFFF;
+      color: #f1ee05;
   }
   
   .submenu:hover #carrito {
